@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Book</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Přidat knihu</h1>
+        <form action="add_book.php" method="POST">
+            <label for="title">Název:</label>
+            <input type="text" id="title" name="title" required>
+            
+            <label for="author">Autor:</label>
+            <input type="text" id="author" name="author" required>
+            
+            <label for="year">Rok vydání:</label>
+            <input type="text" id="year" name="year" required>
+            
+            <label for="genre">Žánr:</label>
+            <input type="text" id="genre" name="genre" required>
+            
+            <label for="description">Popis:</label>
+            <textarea id="description" name="description" required></textarea>
+            
+            <input type="submit" value="Přidat knihu">
+        </form>
+    </div>
+</body>
+</html>
